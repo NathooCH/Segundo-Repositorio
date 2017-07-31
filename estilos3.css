@@ -1,0 +1,165 @@
+body {
+	background-color: #02010a;
+	color: white;
+	font-family: 'Dancing Script';
+}
+
+#encabezado {
+	background-color: #5b7989;
+ 	border-radius: 11px 11px 0px 0px;
+	height: 30%;
+}
+
+.menu{
+	text-align: right;
+	margin-top: -6%;
+	margin-right: 2%;
+}
+
+.titulo{
+	text-align: left;
+	margin:1%;
+	padding-top: 0.2%;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+.visitado{
+	text-decoration: none;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+	background-color: #82c3a6;
+}
+
+img{
+	width: 100%;
+	padding: 5%;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 0.5%;
+	margin: 0.5%;
+	width: 30%;
+}
+
+#imagen1 {
+-webkit-filter: blur(10px);
+filter: blur(10px);
+order: 1;
+}
+
+#imagen2 {
+-webkit-filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+order: 2;
+}
+
+#imagen3 {
+-webkit-filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+filter: sepia(90%) drop-shadow(2px 2px 2px #02010a);
+order: 3;
+}
+
+#imagen4 {
+	-webkit-filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+	filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+	order: 4;
+}
+
+#imagen5 {
+	-webkit-filter: drop-shadow(2px 2px 2px #02010a);
+	filter: drop-shadow(2px 2px 2px #02010a);
+order: 5;
+}
+
+#imagen6 {
+	-webkit-filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+	filter: grayscale(100%) drop-shadow(2px 2px 2px #02010a);
+	order: 6;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	background-color: #C6d5c5;
+	color: black;
+	border-radius: 0px 0px 10px 10px;
+	}
+
+	div[class*="columna"]{
+
+		padding-left: 4%;
+		padding-bottom: 3%;
+	}
+
+@media screen{
+#contenidoP{
+	align-content: center;
+	width: 900px;
+	animation: slidein 1s;
+	}
+
+	@-webkit-keyframes slidein{
+		0%{
+			margin-top: 150%;
+		}
+		60%{
+			margin-top: -5%;
+		}
+		100%{
+			margin-top: 0%;
+		}
+	}
+
+	@media (max-width:900px){
+
+		#contenidoP{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			animation: slidein 1s;
+			}
+
+			@-webkit-keyframes slidein{
+				0%{
+					margin-top: 150%;
+				}
+				60%{
+					margin-top: -5%;
+				}
+				100%{
+					margin-top: 0%;
+				}
+			}
+
+			.titulo{
+				text-align: center;
+				padding: 1%;
+			}
+
+			.menu{
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					}
+		  .contenedor{
+				display: flex;
+				flex-direction: column;
+			}
+
+			img{
+				margin: 16%;
+				width: 280%;
+			}
+
+			footer{
+			display: flex;
+			flex-direction: column;
+
+			}
+			div[class*="columna"]{
+			padding-left: 6%;
+			}
